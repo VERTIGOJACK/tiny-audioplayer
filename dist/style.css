@@ -1,11 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
+:root {
+  --foreground: black;
+  --background: white;
+  --hover: blue;
+  --sliderfill: blue;
+  --sliderbackground: lightgray;
+  --sliderhover: lightblue;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: black;
+  display: grid;
+  place-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
 .audioplayer {
   display: flex;
   justify-content: space-around;
   width: 100vmin;
   aspect-ratio: 20/2;
-  background: white;
+  background: var(--background);
   border-radius: 50vmin;
 }
 
@@ -15,6 +37,7 @@
   margin: 0 2vmin 0 2vmin;
   font-family: "Roboto", sans-serif;
   font-weight: 800;
+  color: var(--foreground);
 }
 
 .audioplayer button {
@@ -22,16 +45,17 @@
   border-radius: 50vmin;
   background-color: transparent;
   border-style: none;
-
   transition: all 1s;
+  color: var(--foreground);
+}
+
+.audioplayer button:hover {
+  color: var(--hover);
 }
 
 .audioplayer button:active {
   transform: scale(1.5);
   transition: all 0s;
-}
-
-.audioplayer .seekbar {
 }
 
 .audioplayer .volume {
@@ -44,10 +68,10 @@
   position: absolute;
   transform-origin: top left;
   transform: rotate(270deg) scaleX(0);
-  background: white;
+  background: rgba(255, 255, 255, 0.95);
   height: 100%;
   bottom: 3vmin;
-  border-radius: 2vmin;
+  border-radius: 10vmin;
   transition: all ease-in-out 0.2s;
 }
 
