@@ -4,8 +4,9 @@ this is a small reusable audioplayer which supports several players in one windo
 
 # How to use
 
-//import audioplayer
-import { getAudioPlayerAsync } from "../dist/vertigo-audioplayer.js";
+Download locally and import getAudioPlayerAsync :
+
+```import { getAudioPlayerAsync } from "../dist/vertigo-audioplayer.js"```
 
 //declare some links to audio
 const AUDIO_FILE =
