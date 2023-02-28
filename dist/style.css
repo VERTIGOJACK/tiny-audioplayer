@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+.audioplayer {
+  display: flex;
+  justify-content: space-around;
+  width: 100vmin;
+  aspect-ratio: 20/2;
+  background: white;
+  border-radius: 50vmin;
+}
+
+.audioplayer p {
+  display: flex;
+  align-items: center;
+  margin: 0 2vmin 0 2vmin;
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+}
+
+.audioplayer button {
+  width: 10vmin;
+  border-radius: 50vmin;
+  background-color: transparent;
+  border-style: none;
+
+  transition: all 1s;
+}
+
+.audioplayer button:active {
+  transform: scale(1.5);
+  transition: all 0s;
+}
+
+.audioplayer .seekbar {
+}
+
+.audioplayer .volume {
+  display: flex;
+  position: relative;
+}
+
+.audioplayer .volume-span {
+  display: flex;
+  position: absolute;
+  transform-origin: top left;
+  transform: rotate(270deg) scaleX(0);
+  background: white;
+  height: 100%;
+  bottom: 3vmin;
+  border-radius: 2vmin;
+  transition: all ease-in-out 0.2s;
+}
+
+.audioplayer .show {
+  transform: rotate(270deg) scaleX(1);
+}
+
+.audioplayer .volume-control {
+  display: flex;
+  place-self: center;
+  margin: 0 3vmin 0 3vmin;
+  width: 20vmin;
+  transform-origin: center left;
+}
