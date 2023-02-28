@@ -7,11 +7,10 @@ this is a small reusable audioplayer which supports several players in one windo
 Download locally and import getAudioPlayerAsync :
 
 ```js
-import { getAudioPlayerAsync } from "../dist/vertigo-audioplayer.js";
+import { getAudioPlayerAsync } from "YOUR_FILEPATH/dist/vertigo-audioplayer.js";
 ```
 
-getAudioPlayerAsync takes an audio object, and returns a HTML node with prepared functionality:
-
+getAudioPlayerAsync takes an audio object as input parameter, and returns a HTML node with prepared functionality:
 
 ```js
 //create new audio object
@@ -21,13 +20,13 @@ let audio = new Audio("myfile.mp3");
 const audioplayer = await getAudioPlayerAsync(audio);
 ```
 
-we can then append the player to view:
+We can then append the player to view:
 
 ```js
-//get container from html
-const container = document.querySelector(".container");
+//get div from html
+const div = document.querySelector("div");
 
 //append player to view
-container.appendChild(audioplayer);
+div.appendChild(audioplayer);
 ```
 
