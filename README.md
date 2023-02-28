@@ -1,6 +1,11 @@
 # vertigo-audioplayer
 
-this is a small reusable audioplayer for javascript, which supports several players in one window.
+this is a small reusable, and easily stylable audioplayer for javascript, which supports several players in one window.
+
+![Audioplayer image](readme-assets/player.png)
+
+interactive example:
+https://codepen.io/Sebastian-Nilsson/pen/LYJxPxY
 
 # How to use
 
